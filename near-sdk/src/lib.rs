@@ -1592,6 +1592,9 @@ pub use near_sdk_macros::FunctionError;
 
 pub mod store;
 
+#[cfg(feature = "secure-random")]
+pub mod random;
+
 #[cfg(feature = "legacy")]
 pub mod collections;
 mod environment;
